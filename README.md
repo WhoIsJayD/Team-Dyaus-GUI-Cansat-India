@@ -24,10 +24,10 @@ For any inquiries or permissions, please contact:
 - **Team LinkedIn**: https://www.linkedin.com/company/team-dyaus-itnu/
 - **Team GitHub**: https://github.com/teamdyaus-itnu
 ## Photos of GUI (Images are taken after our flight)
-![1st Page](images/1.jpg)
-![2nd Page](images/2.jpg)
-![3rd Page](images/3.jpg)
-![4th Page](images/4.jpg)
+![1st Page](Images/1.jpg)
+![2nd Page](Images/2.jpg)
+![3rd Page](Images/3.jpg)
+![4th Page](Images/4.jpg)
 
 ## License
 

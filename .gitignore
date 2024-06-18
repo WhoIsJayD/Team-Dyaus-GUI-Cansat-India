@@ -1,0 +1,6 @@
+venv
+Flight_050_Data_Files
+.idea
+__pycache__
+EXE Files/build
+EXE Files/GCS.spec

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/QSS">
+        <file>icons/activity.png</file>
+        <file>icons/altitude.svg</file>
+        <file>icons/cansat_logo.jpg</file>
+        <file>icons/csv.png</file>
+        <file>icons/database.png</file>
+        <file>icons/logo.jpg</file>
+        <file>icons/map-pin.png</file>
+        <file>icons/nirma_logo.jpg</file>
+    </qresource>
+</RCC>

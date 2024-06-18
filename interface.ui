@@ -1,0 +1,2391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1963</width>
+                <height>988</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="windowTitle">
+            <string>Dyaus | Cansat</string>
+        </property>
+        <property name="windowIcon">
+            <iconset>
+                <normaloff>:/QSS/icons/icon.svg</normaloff>:/QSS/icons/icon.svg
+            </iconset>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">background-color: #08122C;
+                color:#F0E9D2;
+                font: 9pt &quot;Segoe UI&quot;;
+            </string>
+        </property>
+        <widget class="QWidget" name="MainWindow_2">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+                <item alignment="Qt::AlignTop">
+                    <widget class="QWidget" name="LogoWidget" native="true">
+                        <layout class="QGridLayout" name="gridLayout_2">
+                            <item row="5" column="1">
+                                <spacer name="horizontalSpacer_4">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                            <item row="9" column="1">
+                                <widget class="QLineEdit" name="DatePlaceholder">
+                                    <property name="styleSheet">
+                                        <string notr="true">border-style:outset;
+                                            border-width:2px;
+                                            border-radius: 1px;
+                                            border-color: rgb(0, 199, 179);;
+                                            color:#F0E9D2;
+                                        </string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="4" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                                <widget class="QTextEdit" name="CansatLogo">
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>250</width>
+                                            <height>200</height>
+                                        </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                        <string notr="true">background-color: #1f232a;</string>
+                                    </property>
+                                    <property name="sizeAdjustPolicy">
+                                        <enum>QAbstractScrollArea::AdjustToContents</enum>
+                                    </property>
+                                    <property name="lineWrapMode">
+                                        <enum>QTextEdit::NoWrap</enum>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="html">
+                                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                            &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot;
+                                            /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                            p, li { white-space: pre-wrap; }
+                                            hr { height: 1px; border-width: 0; }
+                                            li.unchecked::marker { content: &quot;\2610&quot;; }
+                                            li.checked::marker { content: &quot;\2612&quot;; }
+                                            &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI';
+                                            font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+                                            &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                            margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/QSS/icons/cansat_logo.jpg&quot;
+                                            /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                        </string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="8" column="1">
+                                <widget class="QWidget" name="NameSerialWidget" native="true">
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>260</width>
+                                            <height>551</height>
+                                        </size>
+                                    </property>
+                                    <property name="styleSheet">
+                                        <string notr="true">color:rgb(0, 199, 179);;</string>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="verticalLayout">
+                                        <item>
+                                            <widget class="QLineEdit" name="TeamID">
+                                                <property name="font">
+                                                    <font>
+                                                        <family>Segoe UI</family>
+                                                        <pointsize>9</pointsize>
+                                                        <italic>false</italic>
+                                                        <bold>false</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="styleSheet">
+                                                    <string notr="true">border-style:outset;
+                                                        border-width:1px;
+                                                        border-radius: 1px;
+                                                        border-color: rgb(0, 199, 179);;
+                                                        color:#F0E9D2;
+                                                    </string>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Team ID : 2022ASI-050</string>
+                                                </property>
+                                                <property name="cursorPosition">
+                                                    <number>21</number>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>Qt::AlignCenter</set>
+                                                </property>
+                                                <property name="readOnly">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QLineEdit" name="TeamName">
+                                                <property name="sizePolicy">
+                                                    <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                                                        <horstretch>0</horstretch>
+                                                        <verstretch>0</verstretch>
+                                                    </sizepolicy>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>260</width>
+                                                        <height>100</height>
+                                                    </size>
+                                                </property>
+                                                <property name="font">
+                                                    <font>
+                                                        <family>Segoe UI</family>
+                                                        <pointsize>9</pointsize>
+                                                        <italic>false</italic>
+                                                        <bold>false</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="styleSheet">
+                                                    <string notr="true">border-style:outset;
+                                                        border-width:1px;
+                                                        border-radius: 1px;
+                                                        border-color: rgb(0, 199, 179);;
+                                                        color:#F0E9D2;
+                                                    </string>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Team Name : Dyaus</string>
+                                                </property>
+                                                <property name="frame">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>Qt::AlignCenter</set>
+                                                </property>
+                                                <property name="readOnly">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <spacer name="horizontalSpacer">
+                                                <property name="orientation">
+                                                    <enum>Qt::Horizontal</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                        <item>
+                                            <widget class="QGroupBox" name="ProgressStateBox">
+                                                <property name="styleSheet">
+                                                    <string notr="true">color: white;</string>
+                                                </property>
+                                                <property name="title">
+                                                    <string>Progress State</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>Qt::AlignCenter</set>
+                                                </property>
+                                                <layout class="QGridLayout" name="gridLayout_9">
+                                                    <item row="1" column="0" colspan="4">
+                                                        <widget class="QProgressBar" name="ProgressStateBar">
+                                                            <property name="styleSheet">
+                                                                <string notr="true">background-color: #08122C;
+                                                                    color:rgb(0, 199, 179);
+                                                                </string>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>12</number>
+                                                            </property>
+                                                            <property name="alignment">
+                                                                <set>Qt::AlignCenter</set>
+                                                            </property>
+                                                            <property name="format">
+                                                                <string>%p%</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="0" column="0" colspan="4">
+                                                        <widget class="QLineEdit" name="ProgressStateDisplay">
+                                                            <property name="styleSheet">
+                                                                <string notr="true">background-color: #08122C;
+                                                                    color:rgb(243, 255, 6)
+                                                                </string>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string/>
+                                                            </property>
+                                                            <property name="alignment">
+                                                                <set>Qt::AlignCenter</set>
+                                                            </property>
+                                                            <property name="readOnly">
+                                                                <bool>true</bool>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <spacer name="horizontalSpacer_9">
+                                                <property name="orientation">
+                                                    <enum>Qt::Horizontal</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                        <item>
+                                            <widget class="QLineEdit" name="SerialSettings">
+                                                <property name="font">
+                                                    <font>
+                                                        <family>Segoe UI</family>
+                                                        <pointsize>9</pointsize>
+                                                        <italic>false</italic>
+                                                        <bold>false</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="styleSheet">
+                                                    <string notr="true">border-style:outset;
+                                                        border-width:5px;
+                                                        border-radius: 10px;
+                                                        border-color: rgb(0, 199, 179);;
+                                                        color: white;
+                                                    </string>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Serial Settings</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>Qt::AlignCenter</set>
+                                                </property>
+                                                <property name="readOnly">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                                            <widget class="QLineEdit" name="SerialPort">
+                                                <property name="font">
+                                                    <font>
+                                                        <family>Segoe UI</family>
+                                                        <pointsize>9</pointsize>
+                                                        <italic>false</italic>
+                                                        <bold>false</bold>
+                                                    </font>
+                                                </property>
+                                                <property name="styleSheet">
+                                                    <string notr="true">border-width:5px;
+                                                        border-radius: 10px;
+                                                        color: white;
+                                                    </string>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Serial Port :</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>Qt::AlignCenter</set>
+                                                </property>
+                                                <property name="readOnly">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QComboBox" name="PortDropdown">
+                                                <property name="styleSheet">
+                                                    <string notr="true"/>
+                                                </property>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM1</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM2</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM3</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM4</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM5</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM6</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM7</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM8</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM9</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>COM10</string>
+                                                    </property>
+                                                </item>
+                                            </widget>
+                                        </item>
+                                        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                                            <widget class="QLineEdit" name="BaudRate">
+                                                <property name="styleSheet">
+                                                    <string notr="true">border-width:5px;
+                                                        border-radius: 10px;
+                                                        color: white;
+                                                    </string>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Baud Rate :</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>Qt::AlignCenter</set>
+                                                </property>
+                                                <property name="readOnly">
+                                                    <bool>true</bool>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QComboBox" name="BaudDropdown">
+                                                <property name="styleSheet">
+                                                    <string notr="true"/>
+                                                </property>
+                                                <property name="sizeAdjustPolicy">
+                                                    <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+                                                </property>
+                                                <property name="frame">
+                                                    <bool>true</bool>
+                                                </property>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>57600</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>115200</string>
+                                                    </property>
+                                                </item>
+                                                <item>
+                                                    <property name="text">
+                                                        <string>9600</string>
+                                                    </property>
+                                                </item>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <spacer name="horizontalSpacer_17">
+                                                <property name="orientation">
+                                                    <enum>Qt::Horizontal</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>40</width>
+                                                        <height>20</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                        <item>
+                                            <widget class="QLineEdit" name="lineEdit">
+                                                <property name="styleSheet">
+                                                    <string notr="true">border-width:5px;
+                                                        border-radius: 10px;
+                                                        color: white;
+                                                    </string>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Telemetry Data:</string>
+                                                </property>
+                                                <property name="alignment">
+                                                    <set>Qt::AlignCenter</set>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QPushButton" name="Start">
+                                                <property name="text">
+                                                    <string>Start</string>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QPushButton" name="Calibrate">
+                                                <property name="text">
+                                                    <string>Calibrate</string>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </widget>
+                            </item>
+                            <item row="3" column="1" alignment="Qt::AlignBottom">
+                                <widget class="QTextEdit" name="NirmaLogo">
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>225</width>
+                                            <height>100</height>
+                                        </size>
+                                    </property>
+                                    <property name="sizeAdjustPolicy">
+                                        <enum>QAbstractScrollArea::AdjustToContents</enum>
+                                    </property>
+                                    <property name="lineWrapMode">
+                                        <enum>QTextEdit::NoWrap</enum>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="html">
+                                        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                            &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot;
+                                            /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                            p, li { white-space: pre-wrap; }
+                                            hr { height: 1px; border-width: 0; }
+                                            li.unchecked::marker { content: &quot;\2610&quot;; }
+                                            li.checked::marker { content: &quot;\2612&quot;; }
+                                            &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI';
+                                            font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+                                            &lt;p align=&quot;center&quot; style=&quot; margin-top:0px;
+                                            margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                            text-indent:0px;&quot;&gt;&lt;img src=&quot;:/QSS/icons/nirma_logo.jpg&quot;
+                                            /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                        </string>
+                                    </property>
+                                    <property name="tabStopDistance">
+                                        <double>0.000000000000000</double>
+                                    </property>
+                                    <property name="cursorWidth">
+                                        <number>0</number>
+                                    </property>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QWidget" name="TabWidget" native="true">
+                        <layout class="QGridLayout" name="gridLayout">
+                            <item row="0" column="0">
+                                <widget class="QTabWidget" name="Tab">
+                                    <property name="autoFillBackground">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="styleSheet">
+                                        <string notr="true">background-color: #0F1830;
+                                            color: black;
+                                            font: 9pt &quot;Segoe UI&quot;;
+                                        </string>
+                                    </property>
+                                    <property name="tabPosition">
+                                        <enum>QTabWidget::North</enum>
+                                    </property>
+                                    <property name="tabShape">
+                                        <enum>QTabWidget::Rounded</enum>
+                                    </property>
+                                    <property name="currentIndex">
+                                        <number>0</number>
+                                    </property>
+                                    <widget class="QWidget" name="Data">
+                                        <attribute name="icon">
+                                            <iconset resource="QSS_Resources.qrc">
+                                                <normaloff>:/QSS/icons/database.png</normaloff>:/QSS/icons/database.png
+                                            </iconset>
+                                        </attribute>
+                                        <attribute name="title">
+                                            <string>Data</string>
+                                        </attribute>
+                                        <widget class="QGroupBox" name="TelemetryDummyGroupBox">
+                                            <property name="geometry">
+                                                <rect>
+                                                    <x>20</x>
+                                                    <y>0</y>
+                                                    <width>1511</width>
+                                                    <height>111</height>
+                                                </rect>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                    <family>Segoe UI</family>
+                                                    <pointsize>9</pointsize>
+                                                    <italic>false</italic>
+                                                    <bold>false</bold>
+                                                </font>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">color:white;</string>
+                                            </property>
+                                            <property name="title">
+                                                <string>Telemetry</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>Qt::AlignCenter</set>
+                                            </property>
+                                            <property name="flat">
+                                                <bool>false</bool>
+                                            </property>
+                                            <property name="checkable">
+                                                <bool>false</bool>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_6">
+                                                <item row="0" column="0">
+                                                    <widget class="QTextEdit" name="TelemetryDummyValues">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;&amp;lt;TEAM_ID&amp;gt;,&amp;lt;TIME_STAMPING&amp;gt;,&amp;lt;PACKET_COUNT&amp;gt;,&amp;lt;ALTITUDE&amp;gt;,&amp;lt;Pressure&amp;gt;,&amp;lt;Temperature&amp;gt;,&amp;lt;Voltage&amp;gt;,&amp;lt;Hour&amp;gt;,&amp;lt;Minute&amp;gt;,&amp;lt;GNSS_Time_Second&amp;gt;,&amp;lt;GNSS_Location_Latitude&amp;gt;,&amp;lt;GNSS_Location_Langitude&amp;gt;,&amp;lt;GPS_Altitude&amp;gt;,&amp;lt;Connected_Satellites&amp;gt;,&amp;lt;Accelerometer_X&amp;gt;,&amp;lt;Accelerometer_Y&amp;gt;,&amp;lt;Accelerometer_Z&amp;gt;,&amp;lt;ComplementaryRoll&amp;gt;,&amp;lt;ComplementaryPitch&amp;gt;,&amp;lt;ComplementaryYaw&amp;gt;,&amp;lt;Gyro1_Spin&amp;gt;,&amp;lt;Gyro2_Spin&amp;gt;,&amp;lt;State&amp;gt;,&amp;lt;Humidity&amp;gt;,&amp;lt;Velocity&amp;gt;&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QGroupBox" name="TelemetryDummyRealtimeUpdate">
+                                            <property name="geometry">
+                                                <rect>
+                                                    <x>20</x>
+                                                    <y>110</y>
+                                                    <width>1511</width>
+                                                    <height>361</height>
+                                                </rect>
+                                            </property>
+                                            <property name="font">
+                                                <font>
+                                                    <family>Segoe UI</family>
+                                                    <pointsize>9</pointsize>
+                                                    <italic>false</italic>
+                                                    <bold>false</bold>
+                                                </font>
+                                            </property>
+                                            <property name="whatsThis">
+                                                <string comment="0"/>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">color:white;</string>
+                                            </property>
+                                            <property name="title">
+                                                <string>Telementry Data Values</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>Qt::AlignCenter</set>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_5">
+                                                <item row="0" column="1">
+                                                    <widget class="QPlainTextEdit" name="TimePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="10">
+                                                    <widget class="QTextEdit" name="AltitudeText">
+                                                        <property name="font">
+                                                            <font>
+                                                                <family>Segoe UI</family>
+                                                                <pointsize>9</pointsize>
+                                                                <italic>false</italic>
+                                                                <bold>false</bold>
+                                                            </font>
+                                                        </property>
+                                                        <property name="layoutDirection">
+                                                            <enum>Qt::LeftToRight</enum>
+                                                        </property>
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="horizontalScrollBarPolicy">
+                                                            <enum>Qt::ScrollBarAsNeeded</enum>
+                                                        </property>
+                                                        <property name="sizeAdjustPolicy">
+                                                            <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                                                        </property>
+                                                        <property name="autoFormatting">
+                                                            <set>QTextEdit::AutoBulletList</set>
+                                                        </property>
+                                                        <property name="documentTitle">
+                                                            <string/>
+                                                        </property>
+                                                        <property name="undoRedoEnabled">
+                                                            <bool>false</bool>
+                                                        </property>
+                                                        <property name="lineWrapMode">
+                                                            <enum>QTextEdit::WidgetWidth</enum>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Altitude&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="6">
+                                                    <widget class="QPlainTextEdit" name="PacketCountPlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="10">
+                                                    <widget class="QTextEdit" name="SpeedText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Velocity&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="12">
+                                                    <widget class="QPlainTextEdit" name="LongitudePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="12">
+                                                    <widget class="QPlainTextEdit" name="SpeedPlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="6" column="4">
+                                                    <widget class="QTextEdit" name="HumidityText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Humidity&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="3" rowspan="7">
+                                                    <widget class="Line" name="LineSplit2">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="6">
+                                                    <widget class="QPlainTextEdit" name="TemperaturePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="0">
+                                                    <widget class="QTextEdit" name="MissionTimeText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;GNSS Time&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="9" rowspan="7">
+                                                    <widget class="Line" name="LineSplit4">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="1">
+                                                    <widget class="QPlainTextEdit" name="PressurePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="4">
+                                                    <widget class="QTextEdit" name="LatitiudeText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;GNSS Latitude&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="12">
+                                                    <widget class="QPlainTextEdit" name="VoltagePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="2" rowspan="7">
+                                                    <widget class="Line" name="LineSplit1">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="10">
+                                                    <widget class="QTextEdit" name="LongitudeText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;GNSS Longitude&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="12">
+                                                    <widget class="QPlainTextEdit" name="AltitutdePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="6" column="6">
+                                                    <widget class="QPlainTextEdit" name="HumidityPlaceholder">
+                                                        <property name="font">
+                                                            <font>
+                                                                <family>Segoe UI</family>
+                                                                <pointsize>9</pointsize>
+                                                                <italic>false</italic>
+                                                                <bold>false</bold>
+                                                            </font>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="6">
+                                                    <widget class="QPlainTextEdit" name="ConnectedStatePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="1">
+                                                    <widget class="QPlainTextEdit" name="GPSAltitudePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="0">
+                                                    <widget class="QTextEdit" name="TimeText">
+                                                        <property name="font">
+                                                            <font>
+                                                                <family>Segoe UI</family>
+                                                                <pointsize>9</pointsize>
+                                                                <italic>false</italic>
+                                                                <bold>false</bold>
+                                                            </font>
+                                                        </property>
+                                                        <property name="layoutDirection">
+                                                            <enum>Qt::LeftToRight</enum>
+                                                        </property>
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="horizontalScrollBarPolicy">
+                                                            <enum>Qt::ScrollBarAsNeeded</enum>
+                                                        </property>
+                                                        <property name="sizeAdjustPolicy">
+                                                            <enum>QAbstractScrollArea::AdjustIgnored</enum>
+                                                        </property>
+                                                        <property name="autoFormatting">
+                                                            <set>QTextEdit::AutoBulletList</set>
+                                                        </property>
+                                                        <property name="documentTitle">
+                                                            <string/>
+                                                        </property>
+                                                        <property name="undoRedoEnabled">
+                                                            <bool>false</bool>
+                                                        </property>
+                                                        <property name="lineWrapMode">
+                                                            <enum>QTextEdit::WidgetWidth</enum>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Mission Time&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="4">
+                                                    <widget class="QTextEdit" name="PacketCountText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Packet Count&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="6">
+                                                    <widget class="QPlainTextEdit" name="LatitudePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="8" rowspan="7">
+                                                    <widget class="Line" name="LineSplit3">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Vertical</enum>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="1">
+                                                    <widget class="QPlainTextEdit" name="MissionTimePlaceholder">
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="10">
+                                                    <widget class="QTextEdit" name="VoltageText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Voltage&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="4">
+                                                    <widget class="QTextEdit" name="TemperatureText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Temperature&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="0">
+                                                    <widget class="QTextEdit" name="PressureText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Pressure&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="0">
+                                                    <widget class="QTextEdit" name="GPSAltitudeText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;GNSS Altitude&lt;/span&gt;
+                                                                &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="4">
+                                                    <widget class="QTextEdit" name="LatitiudeText_2">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                        <property name="html">
+                                                            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML
+                                                                4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+                                                                &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot;
+                                                                content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot;
+                                                                /&gt;&lt;style type=&quot;text/css&quot;&gt;
+                                                                p, li { white-space: pre-wrap; }
+                                                                hr { height: 1px; border-width: 0; }
+                                                                li.unchecked::marker { content: &quot;\2610&quot;; }
+                                                                li.checked::marker { content: &quot;\2612&quot;; }
+                                                                &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot;
+                                                                font-family:'Segoe UI'; font-size:9pt; font-weight:400;
+                                                                font-style:normal;&quot;&gt;
+                                                                &lt;p style=&quot; margin-top:0px; margin-bottom:0px;
+                                                                margin-left:0px; margin-right:0px; -qt-block-indent:0;
+                                                                text-indent:0px;&quot;&gt; &lt;/p&gt;
+                                                                &lt;p align=&quot;center&quot; style=&quot;
+                                                                margin-top:0px; margin-bottom:0px; margin-left:0px;
+                                                                margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span
+                                                                style=&quot; font-size:10pt;&quot;&gt;Connected
+                                                                Satelites&lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                                                            </string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QGroupBox" name="ThreeDDataGroupBox">
+                                            <property name="geometry">
+                                                <rect>
+                                                    <x>260</x>
+                                                    <y>480</y>
+                                                    <width>321</width>
+                                                    <height>221</height>
+                                                </rect>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">color:white</string>
+                                            </property>
+                                            <property name="title">
+                                                <string>3D Data</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>Qt::AlignCenter</set>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_7">
+                                                <item row="1" column="1" colspan="2">
+                                                    <widget class="QLineEdit" name="Roll">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Roll</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="3" colspan="2">
+                                                    <widget class="QLabel" name="AccelerometerYaw">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="3" column="3" colspan="2">
+                                                    <widget class="QLabel" name="AccelerometerPitch">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="3" column="1" colspan="2">
+                                                    <widget class="QLineEdit" name="Pitch">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Pitch</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="1" colspan="2">
+                                                    <widget class="QLineEdit" name="Yaw">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Yaw</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="3" colspan="2">
+                                                    <widget class="QLabel" name="AccelerometerRoll">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QGroupBox" name="ThreeDGraph">
+                                            <property name="geometry">
+                                                <rect>
+                                                    <x>590</x>
+                                                    <y>490</y>
+                                                    <width>451</width>
+                                                    <height>401</height>
+                                                </rect>
+                                            </property>
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">background-color: #08122C;
+                                                    color:white;
+                                                </string>
+                                            </property>
+                                            <property name="title">
+                                                <string/>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>Qt::AlignCenter</set>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_8">
+                                                <item row="2" column="0">
+                                                    <widget class="QLineEdit" name="lineEdit_2">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>3D Graph</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="0">
+                                                    <widget class="QWidget" name="ThreeDGraphWidget" native="true">
+                                                        <property name="sizePolicy">
+                                                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                <horstretch>0</horstretch>
+                                                                <verstretch>0</verstretch>
+                                                            </sizepolicy>
+                                                        </property>
+                                                        <property name="layoutDirection">
+                                                            <enum>Qt::LeftToRight</enum>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QFrame" name="ACCELFrame">
+                                            <property name="geometry">
+                                                <rect>
+                                                    <x>260</x>
+                                                    <y>760</y>
+                                                    <width>321</width>
+                                                    <height>131</height>
+                                                </rect>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">color:white;
+                                                    border-width:3px;
+                                                </string>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>QFrame::Box</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>QFrame::Sunken</enum>
+                                            </property>
+                                            <property name="lineWidth">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="midLineWidth">
+                                                <number>1</number>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_10">
+                                                <item row="0" column="0" alignment="Qt::AlignLeft">
+                                                    <widget class="QLineEdit" name="Magnetometer_2">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">border-style:offset;</string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string/>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="1">
+                                                    <widget class="QLabel" name="MagenetometerRoll_2">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>X</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="2">
+                                                    <widget class="QLabel" name="MagenetometerRoll_3">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Y</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="3">
+                                                    <widget class="QLabel" name="MagenetometerRoll_4">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Z</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="0" alignment="Qt::AlignLeft">
+                                                    <widget class="QLineEdit" name="ACCElText">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>ACCEL</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="1">
+                                                    <widget class="QLabel" name="ACCElXPlaceholder">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="2">
+                                                    <widget class="QLabel" name="ACCElYPlaceholder">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="3">
+                                                    <widget class="QLabel" name="ACCElZPlaceholder">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QGroupBox" name="groupBox">
+                                            <property name="geometry">
+                                                <rect>
+                                                    <x>1050</x>
+                                                    <y>490</y>
+                                                    <width>481</width>
+                                                    <height>401</height>
+                                                </rect>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">background-color: #08122C;
+                                                    color:white;
+                                                </string>
+                                            </property>
+                                            <property name="title">
+                                                <string/>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>Qt::AlignCenter</set>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_11">
+                                                <item row="0" column="0" rowspan="2">
+                                                    <widget class="QDial" name="Gyro1SpinDial"/>
+                                                </item>
+                                                <item row="0" column="2" rowspan="2">
+                                                    <widget class="QDial" name="Gyro2SpinDial"/>
+                                                </item>
+                                                <item row="2" column="0">
+                                                    <widget class="QLineEdit" name="SpinDial1Placeholder">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Gyro 1 :</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="2" column="2">
+                                                    <widget class="QLineEdit" name="SpinDial2Placeholder">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                                border-color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Gyro 2 :</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                        <widget class="QGroupBox" name="SensorStatus">
+                                            <property name="geometry">
+                                                <rect>
+                                                    <x>20</x>
+                                                    <y>480</y>
+                                                    <width>231</width>
+                                                    <height>411</height>
+                                                </rect>
+                                            </property>
+                                            <property name="styleSheet">
+                                                <string notr="true">color:white</string>
+                                            </property>
+                                            <property name="title">
+                                                <string>Sensor Status</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>Qt::AlignCenter</set>
+                                            </property>
+                                            <layout class="QGridLayout" name="gridLayout_12">
+                                                <item row="6" column="1">
+                                                    <widget class="QLineEdit" name="Reset_Label">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Reset</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="3" column="3" colspan="2">
+                                                    <widget class="QLabel" name="IMU_TEXT">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="1">
+                                                    <widget class="QLineEdit" name="Pressure_Label">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Pressure</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="5" column="3" colspan="2">
+                                                    <widget class="QLabel" name="TEMP_TEXT">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="1">
+                                                    <widget class="QLineEdit" name="RTC_Label">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>RTC</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="1" column="3" colspan="2">
+                                                    <widget class="QLabel" name="RTC_TEXT">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="3" column="1">
+                                                    <widget class="QLineEdit" name="IMU_Label">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>IMU</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="6" column="3" colspan="2">
+                                                    <widget class="QLabel" name="RESET_TEXT">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="4" column="3" colspan="2">
+                                                    <widget class="QLabel" name="PRESSURE_TEXT">
+                                                        <property name="frameShape">
+                                                            <enum>QFrame::Box</enum>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>TextLabel</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="5" column="1">
+                                                    <widget class="QLineEdit" name="Temp_Label">
+                                                        <property name="styleSheet">
+                                                            <string notr="true">background-color: #08122C;
+                                                                color:rgb(0, 199, 179);
+                                                            </string>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Temp. &amp; Humid.</string>
+                                                        </property>
+                                                        <property name="alignment">
+                                                            <set>Qt::AlignCenter</set>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </widget>
+                                    </widget>
+                                    <widget class="QWidget" name="Graph">
+                                        <attribute name="icon">
+                                            <iconset resource="QSS_Resources.qrc">
+                                                <normaloff>:/QSS/icons/activity.png</normaloff>:/QSS/icons/activity.png
+                                            </iconset>
+                                        </attribute>
+                                        <attribute name="title">
+                                            <string>Graph</string>
+                                        </attribute>
+                                        <layout class="QGridLayout" name="gridLayout_13">
+                                            <item row="6" column="3">
+                                                <widget class="QLineEdit" name="Humidity_Graph_Text">
+                                                    <property name="styleSheet">
+                                                        <string notr="true">background-color: #08122C;
+                                                            color:rgb(0, 199, 179);
+                                                        </string>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Humidity :</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                    <property name="dragEnabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="1" column="4" rowspan="6">
+                                                <spacer name="verticalSpacer">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Vertical</enum>
+                                                    </property>
+                                                    <property name="sizeHint" stdset="0">
+                                                        <size>
+                                                            <width>20</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                            <item row="0" column="0" rowspan="8">
+                                                <spacer name="verticalSpacer_2">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Vertical</enum>
+                                                    </property>
+                                                    <property name="sizeHint" stdset="0">
+                                                        <size>
+                                                            <width>20</width>
+                                                            <height>40</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                            <item row="1" column="3">
+                                                <widget class="QGraphicsView" name="Voltage_Graph"/>
+                                            </item>
+                                            <item row="7" column="1" colspan="4">
+                                                <spacer name="horizontalSpacer_7">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Horizontal</enum>
+                                                    </property>
+                                                    <property name="sizeHint" stdset="0">
+                                                        <size>
+                                                            <width>40</width>
+                                                            <height>20</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                            <item row="6" column="2">
+                                                <widget class="QLineEdit" name="Speed_Graph_Text">
+                                                    <property name="styleSheet">
+                                                        <string notr="true">background-color: #08122C;
+                                                            color:rgb(0, 199, 179);
+                                                        </string>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Speed :</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                    <property name="dragEnabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="2" column="2">
+                                                <widget class="QLineEdit" name="Temperature_Graph_Text">
+                                                    <property name="styleSheet">
+                                                        <string notr="true">background-color: #08122C;
+                                                            color:rgb(0, 199, 179);
+                                                        </string>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Temperature :</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                    <property name="dragEnabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="6" column="1">
+                                                <widget class="QLineEdit" name="Pressure_Graph_Text">
+                                                    <property name="styleSheet">
+                                                        <string notr="true">background-color: #08122C;
+                                                            color:rgb(0, 199, 179);
+                                                        </string>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Pressure :</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                    <property name="dragEnabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="1" column="1">
+                                                <widget class="QGraphicsView" name="Altitude_Graph"/>
+                                            </item>
+                                            <item row="2" column="1">
+                                                <widget class="QLineEdit" name="Altitude_Graph_Text">
+                                                    <property name="styleSheet">
+                                                        <string notr="true">background-color: #08122C;
+                                                            color:rgb(0, 199, 179);
+                                                        </string>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Altitude :</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                    <property name="dragEnabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="5" column="1">
+                                                <widget class="QGraphicsView" name="Pressure_Graph"/>
+                                            </item>
+                                            <item row="0" column="1" colspan="4">
+                                                <spacer name="horizontalSpacer_6">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Horizontal</enum>
+                                                    </property>
+                                                    <property name="sizeHint" stdset="0">
+                                                        <size>
+                                                            <width>40</width>
+                                                            <height>20</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                            <item row="5" column="2">
+                                                <widget class="QGraphicsView" name="Speed_Graph"/>
+                                            </item>
+                                            <item row="2" column="3">
+                                                <widget class="QLineEdit" name="Voltage_Graph_Text">
+                                                    <property name="styleSheet">
+                                                        <string notr="true">background-color: #08122C;
+                                                            color:rgb(0, 199, 179);
+                                                        </string>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Voltage :</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                    <property name="dragEnabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item row="1" column="2">
+                                                <widget class="QGraphicsView" name="Temperature_Graph"/>
+                                            </item>
+                                            <item row="4" column="1" colspan="3">
+                                                <spacer name="horizontalSpacer_5">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Horizontal</enum>
+                                                    </property>
+                                                    <property name="sizeHint" stdset="0">
+                                                        <size>
+                                                            <width>40</width>
+                                                            <height>20</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                            <item row="5" column="3">
+                                                <widget class="QGraphicsView" name="Humidity_Graph"/>
+                                            </item>
+                                            <item row="3" column="1" colspan="3">
+                                                <spacer name="horizontalSpacer_8">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Horizontal</enum>
+                                                    </property>
+                                                    <property name="sizeHint" stdset="0">
+                                                        <size>
+                                                            <width>40</width>
+                                                            <height>20</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                    <widget class="QWidget" name="Map">
+                                        <attribute name="icon">
+                                            <iconset resource="QSS_Resources.qrc">
+                                                <normaloff>:/QSS/icons/map-pin.png</normaloff>:/QSS/icons/map-pin.png
+                                            </iconset>
+                                        </attribute>
+                                        <attribute name="title">
+                                            <string>Map</string>
+                                        </attribute>
+                                        <layout class="QGridLayout" name="gridLayout_3">
+                                            <item row="0" column="0">
+                                                <widget class="QFrame" name="MapCombinedFrame">
+                                                    <property name="frameShape">
+                                                        <enum>QFrame::StyledPanel</enum>
+                                                    </property>
+                                                    <property name="frameShadow">
+                                                        <enum>QFrame::Raised</enum>
+                                                    </property>
+                                                    <layout class="QGridLayout" name="gridLayout_4">
+                                                        <item row="1" column="0" alignment="Qt::AlignBottom">
+                                                            <widget class="QFrame" name="LatFrame">
+                                                                <property name="styleSheet">
+                                                                    <string notr="true">color:rgb(0, 199, 179);;
+                                                                    </string>
+                                                                </property>
+                                                                <property name="frameShape">
+                                                                    <enum>QFrame::StyledPanel</enum>
+                                                                </property>
+                                                                <property name="frameShadow">
+                                                                    <enum>QFrame::Raised</enum>
+                                                                </property>
+                                                                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                                                                    <item>
+                                                                        <spacer name="Lat_Spacer">
+                                                                            <property name="orientation">
+                                                                                <enum>Qt::Vertical</enum>
+                                                                            </property>
+                                                                            <property name="sizeHint" stdset="0">
+                                                                                <size>
+                                                                                    <width>20</width>
+                                                                                    <height>40</height>
+                                                                                </size>
+                                                                            </property>
+                                                                        </spacer>
+                                                                    </item>
+                                                                    <item>
+                                                                        <widget class="QLineEdit" name="Latitude">
+                                                                            <property name="styleSheet">
+                                                                                <string notr="true">background-color:
+                                                                                    #08122C;
+                                                                                    color:rgb(0, 199, 179);
+                                                                                </string>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>GNSS Latitude :</string>
+                                                                            </property>
+                                                                            <property name="alignment">
+                                                                                <set>Qt::AlignCenter</set>
+                                                                            </property>
+                                                                            <property name="readOnly">
+                                                                                <bool>true</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </item>
+                                                                    <item>
+                                                                        <widget class="QLineEdit" name="Lat_Text">
+                                                                            <property name="alignment">
+                                                                                <set>Qt::AlignCenter</set>
+                                                                            </property>
+                                                                            <property name="readOnly">
+                                                                                <bool>true</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </item>
+                                                                    <item>
+                                                                        <spacer name="Lat_Long_Spacer">
+                                                                            <property name="orientation">
+                                                                                <enum>Qt::Vertical</enum>
+                                                                            </property>
+                                                                            <property name="sizeHint" stdset="0">
+                                                                                <size>
+                                                                                    <width>20</width>
+                                                                                    <height>40</height>
+                                                                                </size>
+                                                                            </property>
+                                                                        </spacer>
+                                                                    </item>
+                                                                    <item>
+                                                                        <widget class="QLineEdit" name="Longitude">
+                                                                            <property name="styleSheet">
+                                                                                <string notr="true">background-color:
+                                                                                    #08122C;
+                                                                                    color:rgb(0, 199, 179);
+                                                                                </string>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>GNSS Longitude :</string>
+                                                                            </property>
+                                                                            <property name="alignment">
+                                                                                <set>Qt::AlignCenter</set>
+                                                                            </property>
+                                                                            <property name="readOnly">
+                                                                                <bool>true</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </item>
+                                                                    <item>
+                                                                        <widget class="QLineEdit" name="Longi_Text">
+                                                                            <property name="alignment">
+                                                                                <set>Qt::AlignCenter</set>
+                                                                            </property>
+                                                                            <property name="readOnly">
+                                                                                <bool>true</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </item>
+                                                                    <item>
+                                                                        <spacer name="Longi_Spacer">
+                                                                            <property name="orientation">
+                                                                                <enum>Qt::Vertical</enum>
+                                                                            </property>
+                                                                            <property name="sizeHint" stdset="0">
+                                                                                <size>
+                                                                                    <width>20</width>
+                                                                                    <height>40</height>
+                                                                                </size>
+                                                                            </property>
+                                                                        </spacer>
+                                                                    </item>
+                                                                    <item>
+                                                                        <widget class="QLineEdit"
+                                                                                name="GPS_Map_Altitude_Text">
+                                                                            <property name="styleSheet">
+                                                                                <string notr="true">background-color:
+                                                                                    #08122C;
+                                                                                    color:rgb(0, 199, 179);
+                                                                                </string>
+                                                                            </property>
+                                                                            <property name="text">
+                                                                                <string>GNSS Altitude</string>
+                                                                            </property>
+                                                                            <property name="alignment">
+                                                                                <set>Qt::AlignCenter</set>
+                                                                            </property>
+                                                                            <property name="readOnly">
+                                                                                <bool>true</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </item>
+                                                                    <item>
+                                                                        <widget class="QLineEdit"
+                                                                                name="GPS_Map_Altitude_Placeholder">
+                                                                            <property name="alignment">
+                                                                                <set>Qt::AlignCenter</set>
+                                                                            </property>
+                                                                            <property name="readOnly">
+                                                                                <bool>true</bool>
+                                                                            </property>
+                                                                        </widget>
+                                                                    </item>
+                                                                </layout>
+                                                            </widget>
+                                                        </item>
+                                                        <item row="0" column="0"
+                                                              alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                                                            <widget class="QWidget" name="MapFrame" native="true">
+                                                                <property name="enabled">
+                                                                    <bool>true</bool>
+                                                                </property>
+                                                                <property name="sizePolicy">
+                                                                    <sizepolicy hsizetype="Expanding"
+                                                                                vsizetype="Expanding">
+                                                                        <horstretch>100</horstretch>
+                                                                        <verstretch>100</verstretch>
+                                                                    </sizepolicy>
+                                                                </property>
+                                                                <property name="minimumSize">
+                                                                    <size>
+                                                                        <width>1580</width>
+                                                                        <height>800</height>
+                                                                    </size>
+                                                                </property>
+                                                                <property name="maximumSize">
+                                                                    <size>
+                                                                        <width>1580</width>
+                                                                        <height>800</height>
+                                                                    </size>
+                                                                </property>
+                                                                <property name="sizeIncrement">
+                                                                    <size>
+                                                                        <width>1580</width>
+                                                                        <height>800</height>
+                                                                    </size>
+                                                                </property>
+                                                                <property name="baseSize">
+                                                                    <size>
+                                                                        <width>1580</width>
+                                                                        <height>800</height>
+                                                                    </size>
+                                                                </property>
+                                                                <property name="focusPolicy">
+                                                                    <enum>Qt::WheelFocus</enum>
+                                                                </property>
+                                                                <property name="whatsThis">
+                                                                    <string notr="true"/>
+                                                                </property>
+                                                                <property name="layoutDirection">
+                                                                    <enum>Qt::LeftToRight</enum>
+                                                                </property>
+                                                                <property name="styleSheet">
+                                                                    <string notr="true"/>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                    <widget class="QWidget" name="CSVTab">
+                                        <attribute name="icon">
+                                            <iconset resource="QSS_Resources.qrc">
+                                                <normaloff>:/QSS/icons/csv.png</normaloff>:/QSS/icons/csv.png
+                                            </iconset>
+                                        </attribute>
+                                        <attribute name="title">
+                                            <string>CSV</string>
+                                        </attribute>
+                                        <layout class="QVBoxLayout" name="verticalLayout_2">
+                                            <item>
+                                                <widget class="QLineEdit" name="CSV_Display_Text">
+                                                    <property name="styleSheet">
+                                                        <string notr="true">background-color: #08122C;
+                                                            color:rgb(243, 255, 6)
+                                                        </string>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>flight_050.csv</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QFrame" name="CSV_Display_Frame">
+                                                    <property name="frameShape">
+                                                        <enum>QFrame::StyledPanel</enum>
+                                                    </property>
+                                                    <property name="frameShadow">
+                                                        <enum>QFrame::Raised</enum>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <resources>
+        <include location="QSS_Resources.qrc"/>
+    </resources>
+    <connections/>
+</ui>
